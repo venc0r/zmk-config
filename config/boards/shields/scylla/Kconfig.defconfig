@@ -17,6 +17,9 @@ if SHIELD_SCYLLA_RIGHT
 config ZMK_KEYBOARD_NAME
 	default "BK Scylla ZMK Right"
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
 endif
 
 if SHIELD_SCYLLA_LEFT || SHIELD_SCYLLA_RIGHT

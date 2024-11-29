@@ -3,6 +3,6 @@ id: regret
 name: Re-gret
 type: shield
 url: https://github.com/rschenk/regret
-requires: [seeed_xiao]
+requires: [seeeduino_xiao_ble]
 features:
   - keys

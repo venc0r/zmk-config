@@ -6,6 +6,10 @@
 
 #include "scylla_xiao.dtsi"
 
+&default_transform {
+    col-offset = <5>;
+};
+
 &kscan0 {
     col-gpios
         = <&xiao_d 6 GPIO_ACTIVE_HIGH>

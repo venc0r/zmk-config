@@ -1,8 +1,8 @@
 # Copyright (c) 2020 ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_SCYLLA_LEFT
+config SHIELD_SCYLLA_XIAO_LEFT
 	def_bool $(shields_list_contains,scylla_xiao_left)
 
-config SHIELD_SCYLLA_RIGHT
+config SHIELD_SCYLLA_XIAO_RIGHT
 	def_bool $(shields_list_contains,scylla_xiao_right)

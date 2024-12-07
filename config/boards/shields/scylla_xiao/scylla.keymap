@@ -55,7 +55,7 @@ bindings = <
 };
 SYM {
 bindings = <
-&trans     &trans    &kp F2    &kp F3   &kp F4   &kp F5       &kp F6   &kp F7    &kp F8    &kp F9 &kp F11   &kp F12 
+&trans     &trans    &kp F2    &kp F3   &kp F4   &kp F5       &kp F6   &kp F7    &kp F8    &kp F9 &kp F11   &kp F12
 &grave_spc &kp EXCL  &kp AMPS  &kp LBRC &kp RBRC &caret_spc   &none    &kp N7    &kp N8    &kp N9 &kp COLON &trans
 &kp HASH   &kp EQUAL &kp DLLR  &kp LPAR &kp RPAR &tilde_spc   &kp N0   &kp N4    &kp N5    &kp N6 &kp PLUS  &kp STAR
 &trans     &kp AT    &kp PRCNT &kp LBKT &kp RBKT &kp PIPE     &kp N0   &kp N1    &kp N2    &kp N3 &kp BSLH  &kp HOME
@@ -65,7 +65,7 @@ bindings = <
 };
 INT {
 bindings = <
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        &none        &bt BT_CLR        &none      &none   &none        &none &none      &none 
+&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        &none        &bt BT_CLR        &none      &none   &none        &none &none      &none
 &none        &none        &none        &none        &none        &none             &none      &none   &kp RA(Y)    &none &none      &none
 &none        &kp RA(Q)    &none        &kp RA(S)    &none        &none             &none      &none   &kp RA(5)    &none &kp RA(P)  &none
 &none        &none        &none        &none        &none        &none             &none      &none  &none        &none &none      &none

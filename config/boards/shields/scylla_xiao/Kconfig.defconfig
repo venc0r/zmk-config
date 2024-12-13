@@ -2,26 +2,26 @@
 # SPDX-License-Identifier: MIT
 
 
-if SHIELD_SCYLLA_RIGHT
+if SHIELD_SCYLLA_XIAO_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "ScyllaZMKR"
+	default "ScyllaXiaoR"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_SCYLLA_LEFT
+if SHIELD_SCYLLA_XIAO_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "ScyllaZMKL"
+	default "ScyllaXiaoL"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default n
 endif
 
-if SHIELD_SCYLLA_LEFT || SHIELD_SCYLLA_RIGHT
+if SHIELD_SCYLLA_XIAO_LEFT || SHIELD_SCYLLA_XIAO_RIGHT
 
 config ZMK_SPLIT
 	default y

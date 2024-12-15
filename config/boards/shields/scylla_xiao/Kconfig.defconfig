@@ -39,6 +39,17 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+
+if SHIELD_SCYLLA_XIAO_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "ScyllaXiaoR"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
+
 if SHIELD_SCYLLA_XIAO_LEFT || SHIELD_SCYLLA_XIAO_RIGHT
 
 config ZMK_SPLIT

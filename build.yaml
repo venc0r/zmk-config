@@ -41,8 +41,8 @@ include:
   - board: xiao_ble
     shield: mnhttn_right
 
-  - board: xiao_ble
-    shield: regret
+  - board: seeeduino_xiao_ble
+    shield: re-gret
 
   - board: xiao_ble
     shield: settings_reset

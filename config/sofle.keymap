@@ -14,6 +14,14 @@
 #define RAISE 2
 #define ADJUST 3
 #define GAME 4
+#define LINUX 5
+
+#define UMLAUT_AQ <25 13>
+#define UMLAUT_SF <27 15>
+#define UMLAUT_UE <20 32>
+#define UMLAUT_OS <34 22>
+#define UMLAUT_MAC_LAYERS <0 1 2 3>
+#define UMLAUT_LIN_LAYERS <5>
 
 &lt {
     flavor = "tap-preferred";
@@ -27,7 +35,12 @@
             then-layer = <3>;
         };
     };
+    combos {
+        compatible = "zmk,combos";
+        #include "umlaut_combos.dtsi"
+    };
     behaviors {
+        #include "umlaut_macros.dtsi"
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -113,7 +126,7 @@
 &trans  &trans   &trans      &trans       &trans       &trans                      &trans        &trans       &trans       &trans       &trans     &trans
 &trans  &kp F1   &kp F2      &kp F3       &kp F4       &kp F5                      &kp F6        &kp F7       &kp F8       &kp F9       &kp F10    &trans
 &trans  &kp F11  &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &out OUT_TOG                &kp K_VOL_UP  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp F12    &trans
-&trans  &trans   &trans      &trans       &trans       &trans       &trans &trans  &kp K_VOL_DN  &trans       &trans       &trans       &tog GAME  &trans
+&trans  &trans   &trans      &trans       &trans       &trans       &trans &trans  &kp K_VOL_DN  &tog LINUX   &trans       &trans       &tog GAME  &trans
                  &trans      &trans       &trans       &trans       &trans &trans  &trans        &trans       &trans       &trans
             >;
 
@@ -136,6 +149,18 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        linux {
+            bindings = <
+&trans &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans &trans
+       &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp N P>;
         };
     };
 };

@@ -9,6 +9,14 @@
 #define RAISE 2
 #define ADJUST 3
 #define NUM 4
+#define LINUX 5
+
+#define UMLAUT_AQ <10 0>
+#define UMLAUT_SF <12 2>
+#define UMLAUT_UE <7 17>
+#define UMLAUT_OS <19 9>
+#define UMLAUT_MAC_LAYERS <0 1 2 3 4>
+#define UMLAUT_LIN_LAYERS <5>
 
 &lt {
     flavor = "tap-preferred";
@@ -27,6 +35,7 @@
             key-positions = <20 29>;
             bindings = <&rgb_ug RGB_TOG>;
         };
+        #include "umlaut_combos.dtsi"
     };
     chosen {
       zmk,battery = &vbatt;
@@ -44,6 +53,7 @@
         };
     };
     behaviors {
+        #include "umlaut_macros.dtsi"
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -122,7 +132,7 @@
             bindings = <
                 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7   &kp F8   &kp F9       &kp F10
                 &kp F11       &trans        &trans        &trans        &trans          &kp K_VOL_UP  &trans   &trans   &trans       &kp F12
-                &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp K_VOL_DN  &trans   &trans   &out OUT_TOG &bt BT_CLR
+                &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp K_VOL_DN  &tog LINUX &trans   &out OUT_TOG &bt BT_CLR
                                                           &trans        &trans          &trans        &trans
             >;
         };
@@ -139,6 +149,15 @@
                 &trans  &trans &trans &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans &trans &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                       &trans  &trans    &trans  &trans
+            >;
+        };
+
+        linux {
+            bindings = <
+&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans
+                     &trans &trans   &trans &trans
             >;
         };
     };

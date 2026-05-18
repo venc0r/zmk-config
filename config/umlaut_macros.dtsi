@@ -1,0 +1,52 @@
+mac_ae: mac_ae {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LA(U)>, <&kp A>;
+};
+mac_oe: mac_oe {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LA(U)>, <&kp O>;
+};
+mac_ue: mac_ue {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LA(U)>, <&kp U>;
+};
+mac_sz: mac_sz {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LA(S)>;
+};
+lin_ae: lin_ae {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LS(SQT)>, <&kp A>;
+};
+lin_oe: lin_oe {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LS(SQT)>, <&kp O>;
+};
+lin_ue: lin_ue {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LS(SQT)>, <&kp U>;
+};
+lin_sz: lin_sz {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp RA(S)>;
+};

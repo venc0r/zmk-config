@@ -1,56 +1,56 @@
 uae_mac: uae_mac {
     timeout-ms = <60>;
     key-positions = UMLAUT_AQ;
-    bindings = <&mac_ae>;
+    bindings = <&mm_ae_mac>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_MAC_LAYERS;
 };
 uoe_mac: uoe_mac {
     timeout-ms = <60>;
     key-positions = UMLAUT_OS;
-    bindings = <&mac_oe>;
+    bindings = <&mm_oe_mac>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_MAC_LAYERS;
 };
 uue_mac: uue_mac {
     timeout-ms = <60>;
     key-positions = UMLAUT_UE;
-    bindings = <&mac_ue>;
+    bindings = <&mm_ue_mac>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_MAC_LAYERS;
 };
 usz_mac: usz_mac {
     timeout-ms = <60>;
     key-positions = UMLAUT_SF;
-    bindings = <&mac_sz>;
+    bindings = <&mm_sz_mac>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_MAC_LAYERS;
 };
 uae_lin: uae_lin {
     timeout-ms = <60>;
     key-positions = UMLAUT_AQ;
-    bindings = <&lin_ae>;
+    bindings = <&mm_ae_lin>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_LIN_LAYERS;
 };
 uoe_lin: uoe_lin {
     timeout-ms = <60>;
     key-positions = UMLAUT_OS;
-    bindings = <&lin_oe>;
+    bindings = <&mm_oe_lin>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_LIN_LAYERS;
 };
 uue_lin: uue_lin {
     timeout-ms = <60>;
     key-positions = UMLAUT_UE;
-    bindings = <&lin_ue>;
+    bindings = <&mm_ue_lin>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_LIN_LAYERS;
 };
 usz_lin: usz_lin {
     timeout-ms = <60>;
     key-positions = UMLAUT_SF;
-    bindings = <&lin_sz>;
+    bindings = <&mm_sz_lin>;
     require-prior-idle-ms = <150>;
     layers = UMLAUT_LIN_LAYERS;
 };

@@ -50,3 +50,103 @@ lin_sz: lin_sz {
     #binding-cells = <0>;
     bindings = <&kp RA(S)>;
 };
+mac_AE: mac_AE {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LA(U)>, <&kp LS(A)>;
+};
+mac_OE: mac_OE {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LA(U)>, <&kp LS(O)>;
+};
+mac_UE: mac_UE {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LA(U)>, <&kp LS(U)>;
+};
+mac_SZ: mac_SZ {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LS(S)>, <&kp LS(S)>;
+};
+lin_AE: lin_AE {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LS(SQT)>, <&kp LS(A)>;
+};
+lin_OE: lin_OE {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LS(SQT)>, <&kp LS(O)>;
+};
+lin_UE: lin_UE {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <30>;
+    bindings = <&kp LS(SQT)>, <&kp LS(U)>;
+};
+lin_SZ: lin_SZ {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&kp LS(S)>, <&kp LS(S)>;
+};
+mm_ae_mac: mm_ae_mac {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_ae>, <&mac_AE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_oe_mac: mm_oe_mac {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_oe>, <&mac_OE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_ue_mac: mm_ue_mac {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_ue>, <&mac_UE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_sz_mac: mm_sz_mac {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mac_sz>, <&mac_SZ>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_ae_lin: mm_ae_lin {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&lin_ae>, <&lin_AE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_oe_lin: mm_oe_lin {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&lin_oe>, <&lin_OE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_ue_lin: mm_ue_lin {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&lin_ue>, <&lin_UE>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+mm_sz_lin: mm_sz_lin {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&lin_sz>, <&lin_SZ>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+};

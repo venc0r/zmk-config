@@ -1,28 +1,46 @@
 mac_ae: mac_ae {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&kp LA(U)>, <&kp A>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp E>, <&kp N4>
+        , <&macro_release &kp LALT>
+        ;
 };
 mac_oe: mac_oe {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&kp LA(U)>, <&kp O>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp F>, <&kp N6>
+        , <&macro_release &kp LALT>
+        ;
 };
 mac_ue: mac_ue {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&kp LA(U)>, <&kp U>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp F>, <&kp C>
+        , <&macro_release &kp LALT>
+        ;
 };
 mac_sz: mac_sz {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LA(S)>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp D>, <&kp F>
+        , <&macro_release &kp LALT>
+        ;
 };
 lin_ae: lin_ae {
     compatible = "zmk,behavior-macro";
@@ -53,28 +71,46 @@ lin_sz: lin_sz {
 mac_ae_up: mac_ae_up {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&kp LA(U)>, <&kp LS(A)>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp C>, <&kp N4>
+        , <&macro_release &kp LALT>
+        ;
 };
 mac_oe_up: mac_oe_up {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&kp LA(U)>, <&kp LS(O)>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp D>, <&kp N6>
+        , <&macro_release &kp LALT>
+        ;
 };
 mac_ue_up: mac_ue_up {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <30>;
-    bindings = <&kp LA(U)>, <&kp LS(U)>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N0>, <&kp N0>, <&kp D>, <&kp C>
+        , <&macro_release &kp LALT>
+        ;
 };
 mac_sz_up: mac_sz_up {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&kp LS(S)>, <&kp LS(S)>;
+    wait-ms = <10>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&kp N1>, <&kp E>, <&kp N9>, <&kp E>
+        , <&macro_release &kp LALT>
+        ;
 };
 lin_ae_up: lin_ae_up {
     compatible = "zmk,behavior-macro";
